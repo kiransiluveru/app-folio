@@ -7,18 +7,27 @@
     "node": "14.17.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.1",
+    "@mui/material": "^5.6.1",
+    "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
+    "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "SET NODE_ENV=test&mocha --require @babel/register --require ignore-styles src/test/*.test.js --watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,5 +47,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-modules-commonjs": "^7.20.11",
+    "@babel/register": "^7.18.9",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "babel-preset-react-app-babel-7": "^4.0.2-0",
+    "chai": "^4.3.7",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "cheerio": "^1.0.0-rc.12",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.7",
+    "ignore-styles": "^5.0.1",
+    "mocha": "^10.2.0"
   }
 }
